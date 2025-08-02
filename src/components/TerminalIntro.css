@@ -1,0 +1,47 @@
+/* src/components/TerminalIntro.css */
+
+.terminal-container {
+    max-width: 750px;
+    margin: 6rem auto 3rem auto; /* ✅ Centered with margin-top */
+    padding: 2rem;
+    background-color: #000;
+    border: 1px solid #00ff88;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 255, 136, 0.2);
+  }
+  
+  .terminal-container .react-console-emulator {
+    background: #1e1e1e;
+    color: #00ff88;
+    border: none;
+    box-shadow: none;
+    padding: 1rem;
+    border-radius: 4px;
+    min-height: 320px;
+  }
+  
+  .react-console-emulator__prompt {
+    animation: blink-caret 1s step-end infinite;
+  }
+  
+  @keyframes blink-caret {
+    0%, 100% {
+      border-right: 2px solid #00ff88;
+    }
+    50% {
+      border-right: 2px solid transparent;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .terminal-container {
+      margin: 4rem 1rem;
+      padding: 1.5rem;
+    }
+  
+    .terminal-container .react-console-emulator {
+      font-size: 0.9rem;
+      padding: 0.75rem;
+    }
+  }
+  

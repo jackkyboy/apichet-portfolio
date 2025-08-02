@@ -1,0 +1,95 @@
+/* === About.css === */
+
+#about {
+    background-color: var(--bg);
+    color: var(--text);
+    padding: 4rem 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #about h2,
+  #about h4 {
+    color: var(--text);
+    font-weight: 700;
+    margin-bottom: 2rem;
+    transition: color 0.3s ease;
+  }
+  
+  #about h4 {
+    margin-top: 2rem;
+    font-weight: 600;
+  }
+  
+  #about p,
+  #about .lead {
+    line-height: 1.6;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.125rem;
+    transition: color 0.3s ease;
+  }
+  
+  /* 💡 Ensure text-muted & lead play nice with dark mode */
+  #about .text-muted,
+  #about .lead {
+    color: var(--text-secondary) !important;
+  }
+  
+  /* 💡 ป้องกัน Bootstrap จัด style เอง */
+  #about .list-group-item {
+    background-color: var(--card-bg);
+    color: var(--text);
+    border: 1px solid var(--card-border);
+    border-radius: 0.25rem;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+    font-size: 0.95rem;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+  }
+  
+  /* 💡 Make sure all list items match theme */
+  #about ul li,
+  #about .skills-list .list-group-item {
+    color: var(--text) !important;
+  }
+  
+  /* Responsive list */
+  .skills-list {
+    margin-top: 0.5rem;
+  }
+  
+  .education-section {
+    margin-top: 1rem;
+  }
+  
+  /* 💡 Button hover fix for dark mode */
+  [data-bs-theme="dark"] #about .btn-outline-primary {
+    border-color: var(--link-hover);
+    color: var(--link-hover);
+  }
+  
+  [data-bs-theme="dark"] #about .btn-outline-primary:hover {
+    background-color: var(--link-hover);
+    color: #000;
+  }
+  
+  /* 💡 เพิ่มเติม - profile image glow (optionally fun) */
+  #about img {
+    transition: box-shadow 0.3s ease;
+  }
+  [data-bs-theme="dark"] #about img {
+    box-shadow: 0 0 16px rgba(102, 204, 255, 0.3);
+  }
+  
+  .terminal-intro {
+    background-color: #1e1e1e;
+    color: #33ff33;
+    font-family: 'Courier New', monospace;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 0 auto 2rem;
+    max-width: 720px;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+    white-space: pre-line;
+  }
+  

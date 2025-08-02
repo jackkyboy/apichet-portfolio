@@ -1,0 +1,43 @@
+/* === Section Summary Styling === */
+
+#summary {
+    background-color: var(--bg);
+    color: var(--text);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  
+    /* ✅ Offset from fixed-top Navbar */
+    margin-top: 72px;
+  
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #summary > .container {
+    max-width: 820px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 1.5rem !important;  /* 24px */
+    padding-right: 1.5rem !important;
+  }
+  
+  /* === Typography Enhancements === */
+  #summary h2 {
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--text);
+  }
+  
+  #summary p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    margin-bottom: 1rem;
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  /* Optional: soften text in dark mode */
+  [data-bs-theme="dark"] #summary p {
+    color: var(--text-secondary);
+  }
+  
