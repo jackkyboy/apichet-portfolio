@@ -1,4 +1,7 @@
+// /Users/apichet/Desktop/portfolio/src/App.jsx
 import React, { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
@@ -6,12 +9,13 @@ import Contact from "./components/Contact";
 import Summary from "./components/Summary";
 import GitHubProjects from "./components/GitHubProjects";
 import TerminalIntro from "./components/TerminalIntro";
+import Footer from "./components/Footer";
+import BlogList from "./components/BlogList";
+import BlogDetail from "./pages/BlogDetail";
+import QuantumAITradingBlog from "./components/QuantumAITradingBlog"; // ✅ เพิ่มตรงนี้
 
 const App = () => {
-  const [theme, setTheme] = useState(() => {
-    return localStorage.getItem("theme") || "light";
-  });
-
+  const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
   const [showIntro, setShowIntro] = useState(true);
 
   useEffect(() => {
@@ -20,7 +24,7 @@ const App = () => {
   }, [theme]);
 
   useEffect(() => {
-    const timer = setTimeout(() => setShowIntro(false), 6000); // ⏳ ปิด Intro หลัง 6 วิ
+    const timer = setTimeout(() => setShowIntro(false), 3000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -28,21 +32,27 @@ const App = () => {
     setTheme(prev => (prev === "light" ? "dark" : "light"));
   };
 
-  return (
+  const ProfileHome = () => (
     <>
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      {showIntro ? (
-        <TerminalIntro />
-      ) : (
-        <>
-          <Summary />
-          <About />
-          <GitHubProjects />
-          <Projects />
-          <Contact />
-        </>
-      )}
+      <Summary />
+      <About />
+      <BlogList />
+      <GitHubProjects />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
+  );
+
+  return (
+    <Router>
+      <Header theme={theme} toggleTheme={toggleTheme} />
+      <Routes>
+        <Route path="/" element={showIntro ? <TerminalIntro /> : <ProfileHome />} />
+        <Route path="/blog/:lang/:id" element={<BlogDetail />} />
+        <Route path="/quantum-ai-blog" element={<QuantumAITradingBlog />} />
+      </Routes>
+    </Router>
   );
 };
 

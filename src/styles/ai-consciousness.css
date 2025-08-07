@@ -1,0 +1,84 @@
+/* ✅ ai-consciousness.css */
+/* ✅ /src/styles/ai-consciousness.css */
+
+/* ✅ /src/styles/ai-consciousness.css */
+
+/* ✅ /src/styles/ai-consciousness.css */
+
+.blog-content {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+  
+    /* ✅ ระยะรอบด้านให้ไม่ชนขอบ */
+    padding-top: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* ✅ ระยะห่างหัวเรื่องใหญ่ */
+  .blog-content h2 {
+    margin-top: 4rem;
+    font-weight: bold;
+  }
+  
+  .blog-content h4 {
+    margin-top: 2rem;
+    font-weight: 600;
+    color: #0d6efd; /* Bootstrap primary */
+  }
+  
+  .blog-content p {
+    margin-bottom: 1rem;
+  }
+  
+  .blog-content em {
+    color: #6c757d;
+    font-style: italic;
+  }
+  
+  .blog-content strong {
+    font-weight: bold;
+    color: #222;
+  }
+  
+  .blog-content ul {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .blog-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .blockquote {
+    border-left: 4px solid #0d6efd;
+    padding-left: 1rem;
+    margin: 2rem 0;
+    font-style: italic;
+    color: #444;
+    background: #f8f9fa;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-4 {
+    margin-top: 2rem;
+  }
+  
+  .blog-content a {
+    text-decoration: underline;
+    color: #0d6efd;
+  }
+  
+  .blog-content a:hover {
+    color: #084298;
+    text-decoration: none;
+  }
+  

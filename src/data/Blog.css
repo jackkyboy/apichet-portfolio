@@ -1,0 +1,18 @@
+.blog-article {
+    line-height: 1.8;
+    font-size: 1.05rem;
+    color: #333;
+  }
+  
+  .blog-article h4 {
+    margin-top: 2rem;
+    color: #212529;
+  }
+  
+  .blog-article blockquote {
+    font-style: italic;
+    border-left: 4px solid #ccc;
+    padding-left: 1rem;
+    margin: 1.5rem 0;
+  }
+  
