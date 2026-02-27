@@ -1,0 +1,79 @@
+/* /src/components/Research.css */
+/* ล้างธีมดำออกทั้งหมด ให้เป็นการ์ดขาวแบบอ่านง่าย */
+
+/* Section */
+.research-section {
+    padding: 60px 20px;
+    background: #f9fafb; /* หรือ transparent ถ้าอยากเนียนทั้งหน้า */
+    color: #111827;
+  }
+  
+  .research-header {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.1rem;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  /* Research item */
+  .research-item {
+    background: #ffffff;
+    padding: 22px 26px;
+    border-radius: 12px;
+    margin-bottom: 28px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.06);
+  }
+  
+  /* Meta info */
+  .research-meta {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-bottom: 10px;
+  }
+  
+  .research-meta a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .research-meta a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Summary */
+  .research-summary {
+    font-size: 0.95rem;
+    margin-bottom: 14px;
+    line-height: 1.6;
+    color: #374151;
+  }
+  
+  /* Highlights */
+  .research-highlights {
+    padding-left: 20px;
+  }
+  
+  .research-highlights li {
+    margin-bottom: 6px;
+    font-size: 0.9rem;
+    color: #4b5563;
+    line-height: 1.55;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .research-section {
+      padding: 40px 16px;
+    }
+  
+    .research-header {
+      font-size: 1.8rem;
+    }
+  
+    .research-item {
+      padding: 18px 18px;
+    }
+  }
+  

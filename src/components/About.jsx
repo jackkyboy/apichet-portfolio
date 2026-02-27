@@ -1,6 +1,8 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, Image } from "react-bootstrap";
 import "./About.css";
+import WorkExperience from "./WorkExperience"; // 👉 เพิ่มบรรทัดนี้
+import ResearchPublications from "./ResearchPublications"; 
 
 const About = () => (
   <section id="about" className="about-section py-5">
@@ -36,46 +38,15 @@ const About = () => (
       </header>
 
       <section className="mb-5">
-        <h4 className="mb-3">💼 Experience Timeline</h4>
-        <ListGroup variant="flush">
-          {[
-            {
-              title: "2022 – Present | Insurance Coordinator, Kerry Siam Seaport",
-              bullets: [
-                "Performed 200+ infrastructure damage surveys and coordinated with legal & insurers",
-                "Introduced analytics tools (Power BI) to track accident patterns and insurance losses",
-                "Developed incident logging tools improving accuracy and response time"
-              ]
-            },
-            {
-              title: "2021 – 2022 | CTO & Co-Founder, Cheetah Insurance Broker",
-              bullets: [
-                "Engineered real-time comparison engine for car insurance using Flask + React",
-                "Led end-to-end deployment with cloud hosting, payment integration (2C2P), and SEO",
-                "Acted as full-stack developer and business strategist in an InsurTech startup model"
-              ]
-            },
-            {
-              title: "2015 – 2021 | Head of Claims Control, Tokio Marine",
-              bullets: [
-                "Managed vehicle claim approvals and escalated legal/negotiation cases",
-                "Oversaw team operations, broker coordination, and regulatory liaison (OIC, court)"
-              ]
-            },
-            {
-              title: "2012 – 2015 | Car Insurance Operations, Muangthai Insurance",
-              bullets: ["Executed policy issuance, endorsements, and client communications"]
-            }
-          ].map((item, idx) => (
-            <ListGroup.Item key={idx}>
-              <strong>{item.title}</strong><br />
-              {item.bullets.map((line, i) => (
-                <div key={i}>- {line}</div>
-              ))}
-            </ListGroup.Item>
-          ))}
-        </ListGroup>
+        <h4 className="mb-3">💼 Work Experience & Systems I Build</h4>
+        <WorkExperience />
       </section>
+
+      <section className="mb-5">
+        <h4 className="mb-3">📡 Research & Publications</h4>
+        <ResearchPublications />
+      </section>
+
 
       <section className="mb-5">
         <h4 className="mb-3">🧠 Technical & Analytical Skills</h4>
